@@ -70,7 +70,7 @@ export class NcellApp{
     }
 
     getRequestHeaders(mssidn: string, action = "LOGIN"): RequestHeaders {
-        return {
+        return <RequestHeaders>{
           requestId: genReqId(),
           timestamp: genTransId(),
           channel: "sca",
