@@ -12,7 +12,7 @@ export var genDeviceId = (): string => {
  * Get current ISO timestamp in formatted way
  * @returns current time in [YYYY-mm-DD HH:MM:SS] format
  */
- export var currentTime = (): string => {
+export var currentTime = (): string => {
   return new Date().toISOString().replace(/T/, " ").replace(/\..+/, "");
 };
 
@@ -28,7 +28,7 @@ export var genReqId = (): string => {
  * Generates a unique transaction id based on current timestamp
  * @returns transaction id
  */
- export var genTransId = (): string => {
+export var genTransId = (): string => {
   return `1${Date.now() / 1000}`.replace(".", "");
 };
 
