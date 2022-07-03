@@ -4,8 +4,6 @@ import { NcellApp } from "../models/ncellapp";
 import { GenerateOtpResponse, ValidateOtpResponse } from "../models/otp";
 
 export class Otp extends NcellApp {
-  private _token = "";
-
   constructor(number: string) {
     super(number);
   }
