@@ -25,7 +25,7 @@ export var genReqId = (): string => {
 };
 
 /**
- * Generates a unique transaction iq based on current timestamp
+ * Generates a unique transaction id based on current timestamp
  * @returns transaction id
  */
  export var genTransId = (): string => {
